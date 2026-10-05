@@ -27,12 +27,45 @@
               <div class="logoName">shortener</div></a>
             </div>
           </header>
-          <div class="mainBody">
+          <div class="mainContainer">
+            <div class="mainBody">
                   <div class="punchline">
-                    <div class="maine">Shrink your links</div>
-                    <div class="sub">not your reach.</div>
+                    <div class="main">Shrink your links</div>
+                    <div class="sub">not your reach</div>
+                  </div>
+                  <div class="quote">
+                      URL Shortener — A simple web application that 
+                     converts long URLs into short,<br>  shareable links. 
+                      It generates <br>  a unique short 
+                      URL, stores the <br>  original URL in a database, 
+                      and <br>  redirects users to  <br>  the original website 
+                      when the short link is visited.
+                  </div>
+                  <div class="urlContainer">
+                    <div class="enterURL">
+                    <div class="urlText">URL : </div>
+                    <input type="text" placeholder="https://example.com" size="30">
+                  </div>
+                  <div class="submit">Submit</div>
                   </div>
           </div>
+          <div class="result">
+                  <div class="qrHeading">
+                    QR Code
+                  </div>
+                  <div class="qrcode">
+                  </div>
+                  <div class="urlContainer"><div class="url">https://example.com </div><div class="copy">Copied...</div><svg id="svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect x="9" y="9" width="11" height="11" rx="2"
+        stroke="currentColor" stroke-width="2"/>
+  <path d="M16 9V6C16 4.89543 15.1046 4 14 4H6C4.89543 4 4 4.89543 4 6V14C4 15.1046 4.89543 16 6 16H9"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"/>
+</svg></div>
+          </div>
+          </div>
     </div>
+    <script type="module" src="./src/main.js"> </script>
   </body>
 </html>
