@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+}
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+.threeDots{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 2rem;
+}
+.green{
+    background-color: rgba(8, 240, 8, 0.787);
+    border-radius: 1000rem;
+    width: 40px;
+    height: 40px;
+}
+.red{
+    background-color: rgba(234, 11, 11, 0.729);
+    border-radius: 1000rem;
+    width: 40px;
+    height: 40px;
+}
+.yellow{
+    background-color: rgba(206, 246, 6, 0.527);
+    border-radius: 1000rem;
+    width: 40px;
+    height: 40px;
+}
+.heading{
+    display: flex;
+    gap: 10px;
+}
+.urlHeading{
+    font-family: Aladin;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.652);
+}
+.shortenerHeading{
+    font-family: cursive;
+    align-self: flex-end;
+    padding-bottom: 1.4rem;
+    font-size: 1.3rem;
+    color: #ff3410ab;
+}
+.logo{
+    height: 100%;
+}
+.mainBody{
+    background: linear-gradient(to bottom, #208ef486,#12528e94 );
+    width: 40vw;
+    height: calc(100vh - 10vh);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.logoName,a{
+    text-decoration: none;
+}
+.logoName{
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    color: #ff3410ab;
+    font-family: cursive;
+}
+.punchline{
+    
+}
