@@ -42,7 +42,7 @@ app.post('/url',async(req,res)=>{
      }
      
     res.json({
-        shortURL:`${process.env.DOMAIN}/ly/${data}`
+        shortURL:`https://url-shortener-ukgs.onrender.com/ly/${data}`
     })
 })
 app.listen(process.env.PORT,()=>{

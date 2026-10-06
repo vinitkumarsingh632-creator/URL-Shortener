@@ -19,7 +19,7 @@ submit.onclick = async() => {
     if(value){
         loading.style.display = 'block'
     input.value = ""
-   const data = await fetch('http://localhost:4000/url',{
+   const data = await fetch('https://url-shortener-ukgs.onrender.com/url',{
     method:'post',
     body:JSON.stringify({
         fullURL:value
