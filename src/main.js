@@ -1,4 +1,12 @@
 import qrcode from 'qrcode'
+const serverStarting = document.getElementsByClassName('serverStarting')[0]
+window.addEventListener('DOMContentLoaded',async()=>{
+    console.log('Request Sent')
+    await fetch('https://url-shortener-ukgs.onrender.com/start')
+    serverStarting.display = 'none'
+    console.log('Done')
+
+})
 const svg = document.getElementById('svg')
 const img = document.getElementsByClassName('qrcode')[0]
 const url = document.getElementsByClassName('url')[0]
@@ -10,6 +18,7 @@ svg.onclick = async() =>{
     popup.style.opacity = 0
  },1000)
 }
+
 
 const submit = document.getElementsByClassName('submit')[0]
 const input = document.getElementsByTagName('input')[0]

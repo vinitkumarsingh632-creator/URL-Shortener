@@ -45,6 +45,10 @@ app.post('/url',async(req,res)=>{
         shortURL:`https://url-shortener-ukgs.onrender.com/ly/${data}`
     })
 })
+app.get('/start',(req,res)=>{
+  res.status(200)
+  res.send('OK')
+})
 app.listen(process.env.PORT,()=>{
     console.log('Started')
 })
