@@ -2,8 +2,9 @@ import qrcode from 'qrcode'
 const serverStarting = document.getElementsByClassName('serverStarting')[0]
 window.addEventListener('DOMContentLoaded',async()=>{
     console.log('Request Sent')
+    console.log(serverStarting)
     await fetch('https://url-shortener-ukgs.onrender.com/start')
-    serverStarting.display = 'none'
+    serverStarting.style.display = 'none'
     console.log('Done')
 
 })
