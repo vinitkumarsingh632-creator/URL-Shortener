@@ -5,17 +5,27 @@ const app = express()
 
 app.use(express.json())
 app.use(cors())
-app.get('/ly',(req,res)=>{
-    
+app.get('/ly/:id',async(req,res)=>{
+  const data = await collection.findOne({
+    shortURL:req.params.id
+  })
+  if(data){
+    res.redirect(data.longURL)
+  }
+  else{
+    res.header('content-type','text/html')
+    res.send(`
+        <h2>This is a wrong URL</h2>`)
+  }
 })
 app.post('/url',async(req,res)=>{
     const randomCode = Math.random().toString(36).substring(2, 8)
-    console.log(randomCode)
     let data;
    
       data = await collection.findOne({
         longURL:req.body.fullURL
      })
+
      if(!data){
         try{
             await collection.create({
@@ -27,17 +37,14 @@ app.post('/url',async(req,res)=>{
          catch(err){
             console.log(err)
          }
+     }else{
+        data = data.shortURL
      }
      
-   
-   
-         
-   
-   console.log(data)
     res.json({
-        shortURL:`http://localhost:4000/ly/${data}`
+        shortURL:`${process.env.DOMAIN}/ly/${data}`
     })
 })
-app.listen(4000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log('Started')
 })

@@ -8,7 +8,7 @@ mongoose.connection.on('disconnected',()=>{
 mongoose.connection.on('error',(err)=>{
     console.log(err)
 })
-await mongoose.connect('mongodb+srv://vinitkumarsingh632_db_user:abhaysingh@restro.6kboufv.mongodb.net/urls?retryWrites=true&w=majority')
+await mongoose.connect(process.env.DB)
 
 const URLSchema = mongoose.Schema(
     {
