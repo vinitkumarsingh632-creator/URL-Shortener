@@ -1,13 +1,4 @@
 import qrcode from 'qrcode'
-const serverStarting = document.getElementsByClassName('serverStarting')[0]
-window.addEventListener('DOMContentLoaded',async()=>{
-    console.log('Request Sent')
-    console.log(serverStarting)
-    await fetch('https://warm-valley-7118.de.deplexo.com/start')
-    serverStarting.style.display = 'none'
-    console.log('Done')
-
-})
 const svg = document.getElementById('svg')
 const img = document.getElementsByClassName('qrcode')[0]
 const url = document.getElementsByClassName('url')[0]
