@@ -127,6 +127,15 @@ input:focus{
      gap: 1rem;
      justify-content: center;
      align-items: center;
+     flex-wrap: wrap;
+}
+.submitContainer{
+    height: 20vh;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     justify-content: center;
+     align-items: center;
 }
 .submit{
     background-color: rgba(255, 21, 21, 0.654);
