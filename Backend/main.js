@@ -42,7 +42,7 @@ app.post('/url',async(req,res)=>{
      }
      
     res.json({
-        shortURL:`https://url-shortener-ukgs.onrender.com/ly/${data}`
+        shortURL:`https://warm-valley-7118.de.deplexo.com/ly/${data}`
     })
 })
 app.get('/start',(req,res)=>{

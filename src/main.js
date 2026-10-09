@@ -3,7 +3,7 @@ const serverStarting = document.getElementsByClassName('serverStarting')[0]
 window.addEventListener('DOMContentLoaded',async()=>{
     console.log('Request Sent')
     console.log(serverStarting)
-    await fetch('https://url-shortener-ukgs.onrender.com/start')
+    await fetch('https://warm-valley-7118.de.deplexo.com/start')
     serverStarting.style.display = 'none'
     console.log('Done')
 
@@ -29,7 +29,7 @@ submit.onclick = async() => {
     if(value){
         loading.style.display = 'block'
     input.value = ""
-   const data = await fetch('https://url-shortener-ukgs.onrender.com/url',{
+   const data = await fetch('https://warm-valley-7118.de.deplexo.com/url',{
     method:'post',
     body:JSON.stringify({
         fullURL:value
